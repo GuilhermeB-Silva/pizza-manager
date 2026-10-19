@@ -15,7 +15,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddCustomerModalProps {
-  onAddCustomer: (customer: any) => void
+  onAddCustomer: (customer: unknown) => void
 }
 
 export default function AddCustomerModal({ onAddCustomer }: AddCustomerModalProps) {

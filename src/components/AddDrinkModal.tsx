@@ -17,7 +17,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddDrinkModalProps {
-  onAddDrink: (drink: any) => void
+  onAddDrink: (drink: unknown) => void
 }
 
 export default function AddDrinkModal({ onAddDrink }: AddDrinkModalProps) {

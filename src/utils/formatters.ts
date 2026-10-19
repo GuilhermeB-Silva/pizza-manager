@@ -137,7 +137,7 @@ export const formatTime = (seconds: number) => {
   return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
 };
 
-export const removeEmptyFields = (obj: Record<string, any>) => {
+export const removeEmptyFields = (obj: Record<string, unknown>) => {
   return Object.fromEntries(
     Object.entries(obj).filter(
       ([_, value]) => value != null && value !== "" && value !== " "

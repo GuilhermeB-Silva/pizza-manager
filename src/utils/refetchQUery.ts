@@ -18,7 +18,7 @@ export function updateLastListQueryItem<T>(
 
   const lastQueryKey = lastQuery.queryKey;
 
-  queryClient.setQueryData(lastQueryKey, (old: any) => {
+  queryClient.setQueryData(lastQueryKey, (old: { data?: unknown } | undefined) => {
     if (!old?.data) return old;
 
     const updater = updateFn ?? ((_, updated) => updated);
