@@ -3,6 +3,7 @@ import Dashboard from "@/pages/Dashboard";
 import DeliveryPage from "@/pages/DeliveryPage";
 import DrinksPage from "@/pages/DrinksPage";
 import EndOfDayPage from "@/pages/EndOfDayPage";
+import EntregasPage from "@/pages/EntregasPage";
 import IntegrationsPage from "@/pages/IntegrationsPage";
 import MenuPage from "@/pages/MenuPage";
 import OrdersPage from "@/pages/OrdersPage";
@@ -36,6 +37,10 @@ export const protectedRoutes: RouteObject[] = [
       {
         path: "/delivery",
         element: createAdminRoute(<DeliveryPage />),
+      },
+      {
+        path: "/entregas",
+        element: <EntregasPage />,
       },
       {
         path: "/relatórios",
