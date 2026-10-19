@@ -19,7 +19,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddPizzaModalProps {
-  onAddPizza: (pizza: unknown) => void
+  onAddPizza: (pizza: any) => void
 }
 
 export default function AddPizzaModal({ onAddPizza }: AddPizzaModalProps) {
