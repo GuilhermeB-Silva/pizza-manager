@@ -1,3 +1,4 @@
+import ColetasPage from "@/pages/ColetasPage";
 import CustomersPage from "@/pages/CustomersPage";
 import Dashboard from "@/pages/Dashboard";
 import DeliveryPage from "@/pages/DeliveryPage";
@@ -36,6 +37,10 @@ export const protectedRoutes: RouteObject[] = [
       {
         path: "/delivery",
         element: createAdminRoute(<DeliveryPage />),
+      },
+      {
+        path: "/coletas",
+        element: createAdminRoute(<ColetasPage />),
       },
       {
         path: "/relatórios",
