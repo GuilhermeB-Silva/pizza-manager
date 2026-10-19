@@ -18,6 +18,7 @@ export function updateLastListQueryItem<T>(
 
   const lastQueryKey = lastQuery.queryKey;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   queryClient.setQueryData(lastQueryKey, (old: any) => {
     if (!old?.data) return old;
 

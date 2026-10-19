@@ -17,6 +17,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddDrinkModalProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onAddDrink: (drink: any) => void
 }
 

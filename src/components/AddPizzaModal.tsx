@@ -19,6 +19,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddPizzaModalProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onAddPizza: (pizza: any) => void
 }
 

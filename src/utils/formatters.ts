@@ -137,7 +137,8 @@ export const formatTime = (seconds: number) => {
   return `${minutes}:${remainingSeconds.toString().padStart(2, "0")}`;
 };
 
-export const removeEmptyFields = (obj: Record<string, any>) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const removeEmptyFields =(obj: Record<string, any>) => {
   return Object.fromEntries(
     Object.entries(obj).filter(
       ([_, value]) => value != null && value !== "" && value !== " "

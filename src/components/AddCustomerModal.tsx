@@ -15,6 +15,7 @@ import { Plus } from "lucide-react"
 import { toast } from "sonner"
 
 interface AddCustomerModalProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   onAddCustomer: (customer: any) => void
 }
 
